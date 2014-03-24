@@ -2,7 +2,9 @@ function find(array, predicate, self) {
   self = self || this;
   var len = array.length;
   var i;
-  if (len === 0) return;
+  if (len === 0) {
+    return;
+  }
   if (typeof predicate !== 'function') {
     throw new TypeError(predicate + ' must be a function');
   }

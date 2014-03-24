@@ -1,10 +1,10 @@
 {
   "name": "array-find",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "Find array elements. Executes a callback for each element, returns the first element for which its callback returns a truthy value.",
   "main": "find.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape ./test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/stefanduberg/array-find/issues"
   },
-  "homepage": "https://github.com/stefanduberg/array-find"
+  "homepage": "https://github.com/stefanduberg/array-find",
+  "devDependencies": {
+    "tape": "^2.12.0"
+  }
 }
