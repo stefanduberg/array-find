@@ -1,4 +1,5 @@
 # array-find
+Find array elements. Executes a callback for each element, returns the first element for which its callback returns a truthy value.
 
 ## Usage
 
