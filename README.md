@@ -25,7 +25,6 @@ find(robots, function (robot, index, array) {
 // => undefined
 ```
 
-```
 Optionally pass in an object as third argument to use as `this` when executing callback.
 
 ## Install
