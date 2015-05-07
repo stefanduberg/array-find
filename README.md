@@ -5,15 +5,28 @@ Find array elements. Executes a callback for each element, returns the first ele
 
 ```javascript
 var find = require('array-find');
-var array = [1,2,3,4];
+var numbers = [1, 2, 3, 4];
 
-find(array, function (element, index, arr) {
+find(numbers, function (element, index, array) {
   return element === 2;
 });
 // => 2
 
+var robots = [{name: 'Flexo'}, {name: 'Bender'}, {name: 'Buster'}];
+
+find(robots, function (robot, index, array) {
+  return robot.name === 'Bender';
+});
+// => {name: 'Bender'}
+
+find(robots, function (robot, index, array) {
+  return robot.name === 'Fry';
+});
+// undefined
 ```
-Optionally pass in an object as third argument to use as ``this`` when executing callback. 
+
+```
+Optionally pass in an object as third argument to use as `this` when executing callback.
 
 ## Install
 
