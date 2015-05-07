@@ -20,3 +20,6 @@ Optionally pass in an object as third argument to use as ``this`` when executing
 ```bash
 $ npm install array-find
 ```
+
+## License
+MIT

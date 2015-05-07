@@ -14,8 +14,8 @@
     "array",
     "find"
   ],
-  "author": "Stefan Duberg <stefanduberg@me.com>",
-  "license": "ISC",
+  "author": "Stefan Duberg <stefanduberg@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stefanduberg/array-find/issues"
   },
