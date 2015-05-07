@@ -22,7 +22,7 @@ find(robots, function (robot, index, array) {
 find(robots, function (robot, index, array) {
   return robot.name === 'Fry';
 });
-// undefined
+// => undefined
 ```
 
 ```
