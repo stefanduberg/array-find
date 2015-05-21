@@ -1,6 +1,6 @@
 {
   "name": "array-find",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "ES6 Array.find ponyfill. Return the first array element which satisfies a testing function.",
   "main": "find.js",
   "scripts": {
