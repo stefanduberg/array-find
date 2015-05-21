@@ -1,5 +1,14 @@
 # array-find
+
+**ES6&ast; `Array.find` ponyfill.**
+
+**Ponyfill: A polyfill that doesn't overwrite the native method.**
+
 Find array elements. Executes a callback for each element, returns the first element for which its callback returns a truthy value.
+
+&ast; ES6 – also referred to as [ES 2015][].
+
+[ES 2015]:  http://webreflection.blogspot.de/2015/01/javascript-and-living-ecmascript.html  "JavaScript and the living ECMAScript Standard"
 
 ## Usage
 

@@ -1,7 +1,7 @@
 {
   "name": "array-find",
   "version": "0.1.1",
-  "description": "Find array elements. Executes a callback for each element, returns the first element for which its callback returns a truthy value.",
+  "description": "ES6 Array.find ponyfill. Return the first array element which satisfies a testing function.",
   "main": "find.js",
   "scripts": {
     "test": "tape ./test.js"
@@ -12,7 +12,12 @@
   },
   "keywords": [
     "array",
-    "find"
+    "find",
+    "ponyfill",
+    "polyfill",
+    "es6",
+    "es2015",
+    "es 2015"
   ],
   "author": "Stefan Duberg <stefanduberg@gmail.com>",
   "license": "MIT",
