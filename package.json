@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/stefanduberg/array-find",
   "devDependencies": {
-    "tape": "^2.12.0"
+    "tape": "^4.0.0"
   }
 }
