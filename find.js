@@ -1,23 +1,40 @@
-'use strict';
+(function (root, factory) {
 
-function find(array, predicate, context) {
-  if (typeof Array.prototype.find === 'function') {
-    return array.find(predicate, context);
+  'use strict';
+
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else if (typeof module === 'object' && module.exports) {
+    module.exports = factory();
+  } else {
+    root.shimArrayFind = factory();
   }
 
-  context = context || this;
-  var length = array.length;
-  var i;
+}(this, factory));
 
-  if (typeof predicate !== 'function') {
-    throw new TypeError(predicate + ' is not a function');
-  }
+function factory()
+{
 
-  for (i = 0; i < length; i++) {
-    if (predicate.call(context, array[i], i, array)) {
-      return array[i];
+  function find(array, predicate, context) {
+    if (typeof Array.prototype.find === 'function') {
+      return array.find(predicate, context);
+    }
+
+    context = context || this;
+    var length = array.length;
+    var i;
+
+    if (typeof predicate !== 'function') {
+      throw new TypeError(predicate + ' is not a function');
+    }
+
+    for (i = 0; i < length; i++) {
+      if (predicate.call(context, array[i], i, array)) {
+        return array[i];
+      }
     }
   }
-}
 
-module.exports = find;
+  return find;
+
+}
