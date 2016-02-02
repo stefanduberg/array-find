@@ -10,7 +10,37 @@ Find array elements. Executes a callback for each element, returns the first ele
 
 ## Usage
 
+### Node.js
 ```javascript
+var find = require('array-find');
+
+find([1, 2, 3], function(element) {
+  return element === 2;
+});
+```
+
+### AMD
+```javascript
+define(['array-find'], function(find) {
+
+  find([1, 2, 3], function(element) {
+    return element === 2;
+  });
+
+});
+```
+
+### Browser globals
+```javascript
+shimArrayFind([1, 2, 3], function(element) {
+  return element === 2;
+});
+```
+
+## Example
+
+```javascript
+
 var find = require('array-find');
 var numbers = [1, 2, 3, 4];
 
