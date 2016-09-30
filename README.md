@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/stefanduberg/array-find.svg?branch=master)](https://travis-ci.org/stefanduberg/array-find)
 
-**ES 2015 `Array.find` ponyfill.**
-
-**Ponyfill: A polyfill that doesn't overwrite the native method.**
+**ES 2015 `Array.find` [ponyfill](https://ponyfill.com).**
 
 Find array elements. Executes a callback for each element, returns the first element for which its callback returns a truthy value.
 
