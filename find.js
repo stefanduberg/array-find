@@ -1,4 +1,3 @@
-'use strict';
 
 function find(array, predicate, context) {
   if (typeof Array.prototype.find === 'function') {
@@ -6,18 +5,17 @@ function find(array, predicate, context) {
   }
 
   context = context || this;
-  var length = array.length;
-  var i;
+  const length = array.length;
 
   if (typeof predicate !== 'function') {
     throw new TypeError(predicate + ' is not a function');
   }
 
-  for (i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     if (predicate.call(context, array[i], i, array)) {
       return array[i];
     }
   }
 }
 
-module.exports = find;
+export default find;
