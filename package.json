@@ -2,7 +2,7 @@
   "name": "array-find-es6",
   "version": "2.0.1",
   "description": "ES6 Array.find ponyfill. Return the first array element which satisfies a testing function.",
-  "main": "find.js",
+  "main": "find.es5.js",
   "scripts": {
     "test": "tape ./test.js",
     "build": "babel --presets=env ./find.js --out-file find.es5.js",
