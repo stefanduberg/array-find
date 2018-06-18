@@ -1,17 +1,17 @@
 {
   "name": "array-find-es6",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ES6 Array.find ponyfill. Return the first array element which satisfies a testing function.",
   "main": "find.js",
   "scripts": {
     "test": "tape ./test.js",
     "build": "babel --presets=env ./find.js --out-file find.es5.js",
     "prepare": "npm run build"
-	},
-	"files": [
-		"find.js",
-		"find.es5.js"
-	],
+  },
+  "files": [
+    "find.js",
+    "find.es5.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jelmerdemaat/array-find-es6.git"
