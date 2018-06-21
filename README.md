@@ -1,4 +1,6 @@
-# array-find
+# array-find-es6
+
+Fork of [array-find](https://github.com/stefanduberg/array-find) to make it an ES6 type module.
 
 [![Build Status](https://travis-ci.org/stefanduberg/array-find.svg?branch=master)](https://travis-ci.org/stefanduberg/array-find)
 
@@ -11,15 +13,15 @@ Find array elements. Executes a callback for each element, returns the first ele
 ## Usage
 
 ```javascript
-var find = require('array-find');
-var numbers = [1, 2, 3, 4];
+import find from 'array-find-es6';
+const numbers = [1, 2, 3, 4];
 
 find(numbers, function (element, index, array) {
   return element === 2;
 });
 // => 2
 
-var robots = [{name: 'Flexo'}, {name: 'Bender'}, {name: 'Buster'}];
+const robots = [{name: 'Flexo'}, {name: 'Bender'}, {name: 'Buster'}];
 
 find(robots, function (robot, index, array) {
   return robot.name === 'Bender';

@@ -1,14 +1,19 @@
 {
-  "name": "array-find",
-  "version": "1.0.0",
+  "name": "array-find-es6",
+  "version": "2.0.2",
   "description": "ES6 Array.find ponyfill. Return the first array element which satisfies a testing function.",
-  "main": "find.js",
+  "source": "index.js",
+  "main": "build/array-find-es6.js",
+  "umd:main": "build/array-find-es6.umd.js",
+  "module": "build/array-find-es6.m.js",
   "scripts": {
-    "test": "tape ./test.js"
+    "test": "tape ./test.js",
+    "build": "microbundle -o build --sourcemap false",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefanduberg/array-find.git"
+    "url": "https://github.com/jelmerdemaat/array-find-es6.git"
   },
   "keywords": [
     "array",
@@ -22,10 +27,11 @@
   "author": "Stefan Duberg <stefanduberg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stefanduberg/array-find/issues"
+    "url": "https://github.com/jelmerdemaat/array-find-es6/issues"
   },
-  "homepage": "https://github.com/stefanduberg/array-find",
+  "homepage": "https://github.com/jelmerdemaat/array-find-es6",
   "devDependencies": {
+    "microbundle": "^0.4.4",
     "tape": "^4.0.0"
   }
 }

@@ -1,0 +1,1 @@
+module.exports=function(n,r,t){if("function"==typeof Array.prototype.find)return n.find(r,t);t=t||this;var o=n.length;if("function"!=typeof r)throw new TypeError(r+" is not a function");for(var f=0;f<o;f++)if(r.call(t,n[f],f,n))return n[f]};
