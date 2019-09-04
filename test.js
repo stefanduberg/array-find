@@ -72,3 +72,18 @@ test(
     }
   }
 );
+
+test(
+  'Borrowing function',
+  function (t) {
+    t.plan(1);
+
+    (function () {
+      var found = find(arguments, function (el, index, array) {
+        return el === 3;
+      });
+
+      t.equal(found, 3);
+    }(1, 2, 3));
+  }
+);

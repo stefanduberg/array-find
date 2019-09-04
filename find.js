@@ -1,8 +1,10 @@
 'use strict';
 
 function find(array, predicate, context) {
-  if (typeof Array.prototype.find === 'function') {
-    return array.find(predicate, context);
+  var nativeFind = Array.prototype.find;
+
+  if (typeof nativeFind === 'function') {
+    return nativeFind.call(array, predicate, context);
   }
 
   context = context || this;
